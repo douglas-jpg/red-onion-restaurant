@@ -4,7 +4,8 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/lucassdmp/red-onion-restaurant-forkl?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/lucassdmp/red-onion-restaurant-forkl?style=for-the-badge)
 
-<img src="imagem.png" alt="Exemplo imagem">
+<img src="<img width="1886" height="896" alt="image" src="https://github.com/user-attachments/assets/6302c6e8-aa03-486f-83eb-68eca454844c" />
+" alt="Exemplo imagem">
 
 > Red Onion Food is an online platform for ordering meals delivered to your door. The site allows users to choose their favorite products, enter their delivery address, and conveniently track their order. It also offers the option to register for drivers and make deliveries through the platform.
 
