@@ -1,13 +1,75 @@
-# red-onion-restaurant
- 
-live project : https://red-onion-2021.netlify.app/
+# Red Orion Restaurant
 
+![GitHub repo size](https://img.shields.io/github/repo-size/lucassdmp/red-onion-restaurant-forkl?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/lucassdmp/red-onion-restaurant-forkl?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/lucassdmp/red-onion-restaurant-forkl?style=for-the-badge)
 
-![alt text](https://i.ibb.co/mzHdVc9/screencapture-red-onion-2021-netlify-app-2021-02-20-15-17-39.png)
+<img src="imagem.png" alt="Exemplo imagem">
 
-![alt text](https://i.ibb.co/ZNbF0Qv/screencapture-red-onion-2021-netlify-app-food-Details-2-2021-02-20-15-17-58.png)
+> Red Onion Food is an online platform for ordering meals delivered to your door. The site allows users to choose their favorite products, enter their delivery address, and conveniently track their order. It also offers the option to register for drivers and make deliveries through the platform.
 
-![alt text](https://i.ibb.co/NSJvMFz/screencapture-red-onion-2021-netlify-app-checkout-2021-02-20-15-34-07.png)
+## 🚀 Instalando Red Orion Restaurant
 
+Para instalar o Red Orion Restaurant, siga estas etapas:
 
+Windows:
 
+```
+git clone https://github.com/lucassdmp/red-onion-restaurant-forkl?tab=readme-ov-file
+cd red-onion-restaurant-forkl
+npm install
+npm start
+```
+
+## 🤝 Collaborators
+
+We would like to thank the following people who contributed to this project:
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/109928093?v=4" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+        <sub>
+          <b>João Lucas</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/92951925?v=4" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
+        <sub>
+          <b>Daniel's Oliveira</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/180479512?v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
+        <sub>
+          <b>Pedro Herique</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/102904860?v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
+        <sub>
+          <b>Sofia Desiderio</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/57305990?s=96&v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
+        <sub>
+          <b>Douglas Lima</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+## 📝 License
+
+This project is licensed under a license. See the [LICENSE](LICENSE.md) file for more details.
