@@ -21,6 +21,14 @@ npm install
 npm start
 ```
 
+## 💻 Adjustments and Improvements
+
+The project is still under development, and future updates will focus on the following tasks:
+
+- [ ] Search Implement
+- [ ] Responsiveness
+
+
 ## 🤝 Collaborators
 
 We would like to thank the following people who contributed to this project:
