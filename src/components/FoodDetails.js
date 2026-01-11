@@ -11,19 +11,19 @@ const FoodDetails = () => {
     const [foodCart,setFoodCart]=useContext(FoodContext);
     const [count,setCount]=useState(1);
     const {id} =useParams();
-    var food=Data.filter(key=> key.id==id);
+    let food=Data.filter(key=> key.id==id);
     
-    var detail=food[0];
+    let detail=food[0];
     const [photo,setPhoto]=useState(detail.images[0]);
 
     useEffect(() => {
-        var foods=getDatabaseCart();
+        let foods=getDatabaseCart();
         console.log(foods)
     }, [foodCart])
 
     function addFood(food) {
         food.count=count;
-        var newFood={...foodCart,food};
+        let newFood={...foodCart,food};
         addToDatabaseCart(food.id,food.count);
         setFoodCart(newFood);
     }

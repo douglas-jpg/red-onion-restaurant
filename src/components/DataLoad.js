@@ -24,10 +24,10 @@ const DataLoad = () => {
     useEffect(() => {
          
         if(filter==="All"){
-            var datas=Data.slice(0,6)
+            let datas=Data.slice(0,6)
             setData(datas)
         }else{
-            var datas=Data.filter(key=> key.type==filter);
+            let datas=Data.filter(key=> key.type==filter);
             setData(datas);
         }
     }, [filter])

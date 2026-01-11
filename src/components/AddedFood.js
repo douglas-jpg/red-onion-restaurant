@@ -12,8 +12,8 @@ const AddedFood = () => {
 
     useEffect(() => {
         
-        var data=getDatabaseCart();
-        var item_keys=Object.keys(data);
+        let data=getDatabaseCart();
+        let item_keys=Object.keys(data);
         const added_items=item_keys.map(key=>{
             const item=Data.find(id=> id.id==key);
             item.count=data[key];
@@ -24,19 +24,19 @@ const AddedFood = () => {
     }, [])
  
 
-    var totalPayment=foods.reduce((payment,key)=>{
-        var temp=key.price*key.count;
+    let totalPayment=foods.reduce((payment,key)=>{
+        let temp=key.price*key.count;
         payment=payment+temp;
         return payment;
     },0)
 
-    var vat=15;
-    var tax=parseInt(totalPayment)/100;
+    let vat=15;
+    let tax=parseInt(totalPayment)/100;
     tax=tax*parseInt(vat);
 
-    var inTotal=totalPayment+tax+50;
+    let inTotal=totalPayment+tax+50;
 
-    var total=foods.reduce((sum,key)=>{
+    let total=foods.reduce((sum,key)=>{
         sum=sum+key.count;
         return sum;
     },0);
@@ -53,7 +53,7 @@ const AddedFood = () => {
 
 
     function removeItem(id){
-        var items=foods.filter(key=> key.id!=id);
+        let items=foods.filter(key=> key.id!=id);
         setFoods(items);
         removeFromDatabaseCart(id);
         

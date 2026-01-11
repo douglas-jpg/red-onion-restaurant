@@ -7,9 +7,9 @@ import CompletedPayment from './CompletedPayment';
 import { useHistory } from "react-router-dom";
 const CheckOut = () => {
     let history = useHistory();
-    var [completed, setCompleted] = useState(false);
-    var [form, setForm] = useState(false);
-    var [flag, setFlag] = useState(false);
+    let [completed, setCompleted] = useState(false);
+    let [form, setForm] = useState(false);
+    let [flag, setFlag] = useState(false);
     const [address, setAddress] = useState({
         name: "",
         business: "",
@@ -22,8 +22,8 @@ const CheckOut = () => {
     const [foods, setFoods] = useState([]);
     useEffect(() => {
 
-        var data = getDatabaseCart();
-        var item_keys = Object.keys(data);
+        let data = getDatabaseCart();
+        let item_keys = Object.keys(data);
         const added_items = item_keys.map(key => {
             const item = Data.find(id => id.id == key);
             item.count = data[key];
@@ -35,24 +35,24 @@ const CheckOut = () => {
 
     console.log(foods)
 
-    var total = foods.reduce((sum, key) => {
+    let total = foods.reduce((sum, key) => {
         sum = sum + key.count;
         return sum;
     }, 0);
     console.log(total);
 
-    var totalPayment = foods.reduce((payment, key) => {
-        var temp = key.price * key.count;
+    let totalPayment = foods.reduce((payment, key) => {
+        let temp = key.price * key.count;
         payment = payment + temp;
         return payment;
     }, 0)
 
-    var vat = 15;
-    var tax = parseInt(totalPayment) / 100;
+    let vat = 15;
+    let tax = parseInt(totalPayment) / 100;
     tax = parseFloat(tax * parseInt(vat));
     tax = tax.toFixed(2);
 
-    var inTotal = parseFloat(totalPayment + tax + 50);
+    let inTotal = parseFloat(totalPayment + tax + 50);
 
     inTotal = inTotal.toFixed(2)
 
@@ -63,7 +63,7 @@ const CheckOut = () => {
 
     function changeFunc(e) {
         console.log(e.target.name + " : " + e.target.value);
-        var infos = { ...address };
+        let infos = { ...address };
         infos[e.target.name] = e.target.value;
         setAddress(infos);
     }
@@ -108,7 +108,7 @@ const CheckOut = () => {
     function payment(e) {
         e.preventDefault();
         console.log("Ok")
-        var cardNumber = document.getElementById('card-number').value
+        let cardNumber = document.getElementById('card-number').value
         console.log(cardNumber);
         if (cardNumber == 15101122) {
             setCompleted(true);
